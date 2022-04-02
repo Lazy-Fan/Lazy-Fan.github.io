@@ -21,6 +21,19 @@ li{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.wearing-click{
+    cursor: pointer;
+}
+
+.modified-click{
+    cursor:pointer;
+}
+
+.table-content-click{
+    cursor:pointer;
+}
+
 .wearing-part-content{
     margin-left: 5%;
     margin-right: 5%;
@@ -80,6 +93,7 @@ th, td{
 }
 
 .table-click{
+    cursor: pointer;
     background-color: rgb(180,180,180);
     padding-left: 5%;
     padding-right: 5%;

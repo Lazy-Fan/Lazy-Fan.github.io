@@ -1,9 +1,15 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import "./CSS/Home.css";
 
+
 const Home = () => {
+    useEffect(() => {
+        document.title = "潘仔的玩车碎碎念"
+    }, []);
+
   return (
-      <Fragment>
+    <Fragment>
+
         <div className = "main-header">
             <h1>潘仔的玩⻋碎碎念</h1>
             <hr></hr>
@@ -140,25 +146,13 @@ const Home = () => {
 
                         </tbody>
 
-                        <tbody>
-                            <tr>
-                                <td>Table2 第二行 第一列</td>
-
-                                <td>Table2 第二行 第二列</td>
-
-                                <td>Table2 第二行 第三列</td>
-
-                                <td>Table2 第二行 第四列</td>
-                            </tr>
-
-                        </tbody>
                     </table>
 
                 </div>
             </div>
         </div>
 
-      </Fragment>
+    </Fragment>
 
 
   );
