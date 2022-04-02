@@ -147,6 +147,8 @@ const Home = () => {
                                 <td>Table2 第二行 第二列</td>
 
                                 <td>Table2 第二行 第三列</td>
+
+                                <td>Table2 第二行 第四列</td>
                             </tr>
 
                         </tbody>
