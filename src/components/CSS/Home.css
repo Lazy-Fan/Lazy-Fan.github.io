@@ -1,0 +1,97 @@
+body{
+    background: rgb(255, 199, 208);
+}
+.main-header{
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+
+.refit-content{
+    margin:5%;
+}
+
+ul{
+    padding-top:2%;
+    padding-bottom:2%;
+}
+li{
+    font-size:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.wearing-part-content{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    background-color:white;
+    display: none;
+    box-shadow: 5px 10px #888888
+}
+
+.modified-part-wrapper{
+    margin-top: 5%;
+}
+
+.modified-part-content{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    background-color:white;
+    display: none;
+    box-shadow: 5px 10px #888888
+}
+
+.talbe-wrapper{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.table-content{
+    display:none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    background-color:white;
+}
+
+th, td{
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+
+.table-content{
+    background-color: DodgerBlue;
+    padding:5%;
+    margin:5%;
+    box-shadow: 5px 10px #888888
+}
+
+.table-choice{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.table-click{
+    background-color: rgb(180,180,180);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.table1-click{
+    margin-right: 30%;
+    background-color:white;
+    box-shadow: 5px 10px #888888;
+}
+
+.table2{
+    display: none;
+}
+
