@@ -234,7 +234,7 @@ const Home = () => {
                         </div>
 
                         <div id = "shache-div" className = "inside-pull-down-content">
-                            <a href="#kaqian-title" onClick = {showModifiedPart}>*卡钳详见改装</a>
+                            <a href="#kaqian-title" onClick = {showKaqian}>*卡钳详见改装</a>
                             <p>基础概念可以看:  <a href="https://www.bilibili.com/video/BV1zf4y1R7ji?share_source=copy_web">https://www.bilibili.com/video/BV1zf4y1R7ji?share_source=copy_web</a>
                             </p>
 
@@ -519,6 +519,16 @@ function showModifiedPart(){
         currDiv.style.display = "none";
         currTitle.innerHTML = "改装件 ▾";
     }else{
+        currDiv.style.display = 'block';
+        currTitle.innerHTML = "改装件 ▴";
+    }
+}
+
+function showKaqian(){
+    var currDiv = document.getElementById("modified-part-content");
+    var currTitle = document.getElementById("modified-part-title");
+
+    if(currDiv.style.display != "block"){
         currDiv.style.display = 'block';
         currTitle.innerHTML = "改装件 ▴";
     }
