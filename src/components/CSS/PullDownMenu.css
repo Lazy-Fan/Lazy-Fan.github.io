@@ -1,0 +1,14 @@
+.inside-pull-down-content{
+    display:none;
+    margin-right:5%;
+    margin-left:5%;
+}
+
+.inside-pull-down-content p{
+    white-space: pre-wrap;
+}
+
+.inside-pull-down-title{
+    display: inline-block;
+    cursor:pointer;
+}
