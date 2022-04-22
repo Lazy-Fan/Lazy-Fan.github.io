@@ -63,6 +63,10 @@ body p{
     margin-right:0;
     width:30%;
     text-align: center;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction: column;
 }
 
 .title-button{
