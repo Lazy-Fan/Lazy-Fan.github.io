@@ -26,12 +26,12 @@ const Home = () => {
             <div className = "title-box" onClick = {showAdv}>
                 <h1>懒仔番的玩⻋碎碎念</h1> 
             </div>
-            <hr></hr>
+           
             
         </div>
 
         <div className = "title-button-wrapper">
-
+            
             <div className = "title-button-left">
                 <div className = "project-button title-button" onClick = {showWearingPart}>
                     <h4>损耗件</h4>
