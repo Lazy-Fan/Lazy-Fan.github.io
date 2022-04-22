@@ -6,7 +6,7 @@ import {useParams} from "react-router-dom";
 
 const Home = () => {
     useEffect(() => {
-        document.title = "潘仔的玩车碎碎念"
+        document.title = "懒仔番的玩车碎碎念"
         var n = localStorage.getItem('on_load_counter');
 
         if (n === null) {
@@ -23,29 +23,76 @@ const Home = () => {
     <Fragment>
         {console.log(localStorage.getItem('on_load_counter'))}
         <div className = "main-header">
-            <h1>潘仔的玩⻋碎碎念</h1>
-            <hr></hr>
-        </div>
-
-        <div className = "projects-button-wrapper">
-            <div className = "project-button">
-                <a href="#project1-title">
-                    <h3>Project F82M4 StreetGT</h3>
-                </a>
+            <div className = "title-box" onClick = {showAdv}>
+                <h1>懒仔番的玩⻋碎碎念</h1> 
             </div>
+            <hr></hr>
+            
         </div>
 
-        <div className = "refit-content">
+        <div className = "title-button-wrapper">
+
+            <div className = "title-button-left">
+                <div className = "project-button title-button" onClick = {showWearingPart}>
+                    <h4>损耗件</h4>
+                </div>
+
+
+                <div className = "project-button title-button" onClick = {showModifiedPart}>
+                    <h4>改装件</h4>
+                </div>
+
+            </div>
+
+            <div className = "title-button-right" onClick = {showProjectOne}>
+
+                <div className = "project-button">
+                    <h5>Project F82M4 StreetGT</h5>
+                </div>
+
+            </div>
+            
+        </div>
+        
+        <div className = "main-display">
+            <div id = "adv-content" className = "adv-content">
+
+                <div className = "intro">
+                    <h2>前言</h2>
+                    <p>&emsp;&emsp;初衷是有一个地方能记录下自己参加赛道日之后对汽车相关知识更加深入的了解以及研究。
+                        我不是工程专业亦不是职业赛车出身（本职是生物科研），因此秉承着做学术的态度去查阅资料给大家分享这些汽车知识。
+                        在我个人玩车的过程中发现赛车知识非常零散且大多数是英文所以很多人不会认真去研读，民用车改装跑赛道群体巨大，
+                        可由于获取知识的渠道有限以及车辆的不同，仍旧造成了很多误区。欧美有许多车友论坛，
+                        但目前还没有一个良好的中文平台能提供给大家知识的梳理以及交流，
+                        本站的诞生宗旨于提供给希望开始参加赛道日的小白及已经有一定经验但仍旧没有系统知识和经验的新手们一些方向。
+                        作者坐标北美，希望以后本站能有更多的人受益。起步不易，我们会逐步推出更加完善的功能提供给大家。
+                    </p>
+
+                    <div className = "intro-footer">
+                        <p>望共勉</p>
+                    </div>
+                </div>
+
+            </div>
+
+
             <div id = "wearing-part-wrapper" className = "wearing-part-wrapper">
-                <div className = "wearing-click" onClick = {showWearingPart}>
+                {/* <div className = "wearing-click" onClick = {showWearingPart}>
                     <h2 id= "wearing-part-title">
                         损耗件 ▾
                     </h2>
-                </div>
+                </div> */}
 
                 <div id = "wearing-part-content" className = "wearing-part-content">
 
                     <h2>以下都是参加赛道日前必须检查以及经常更换的项目!!!</h2>
+
+
+                    <div className = "wearing-click">
+                        <h2 id= "wearing-part-title">
+                            损耗件
+                        </h2>
+                    </div>
                     <PullDownMenu
                         upTriangleString = {"机油 ▴"}
                         downTriangleString = {"机油 ▾"}
@@ -103,17 +150,25 @@ const Home = () => {
                                     <div className = "table-choice">
                                         <div id = "table1-click" className = "table-click table1-click " onClick = {showTable1}>
                                             <h3>半R胎</h3>
+                                            <h5>(Extreme Performance) </h5>
                                         </div>
 
 
                                         <div id = "table2-click" className = "table-click table2-click " onClick = {showTable2}>
-                                            <h3>R胎/Semi Slick</h3>
+                                            <h3>R胎</h3>
+                                            <h5> (R Compound) </h5>
+                                        </div>
+
+
+                                        <div id = "table3-click" className = "table-click table3-click " onClick = {showTable3}>
+                                            <h3>半光头</h3>
+                                            <h5> (Semi-Slick) </h5>
                                         </div>
 
 
                                     </div>
 
-                                    <div id = "table1" className = "table1">
+                                    <div id = "table1" className = "table table1">
                                         <table>
                                             <thead>
                                                 <tr>
@@ -127,7 +182,7 @@ const Home = () => {
                                                 <tr>
                                                     <td>Yokohama A052</td>
 
-                                                    <td>TW200</td>
+                                                    <td>200</td>
 
                                                 </tr>
 
@@ -137,7 +192,7 @@ const Home = () => {
                                                 <tr>
                                                     <td>Michelin Pilot Sport Cup 2</td>
 
-                                                    <td> TW180</td>
+                                                    <td> 180</td>
                                                 </tr>
 
                                             </tbody>
@@ -146,14 +201,14 @@ const Home = () => {
                                                 <tr>
                                                     <td>Falken Azenis RT660</td>
 
-                                                    <td> TW200</td>
+                                                    <td> 200</td>
                                                 </tr>
 
                                             </tbody>
                                         </table>
                                     </div>
 
-                                    <div id = "table2" className = "table2">
+                                    <div id = "table2" className = "table table2">
 
                                         <table>
                                             <thead>
@@ -168,7 +223,7 @@ const Home = () => {
                                                 <tr>
                                                     <td>Nankang AR1</td>
 
-                                                    <td>TW100</td>
+                                                    <td>100</td>
                                                 </tr>
 
                                             </tbody>
@@ -177,7 +232,7 @@ const Home = () => {
                                                 <tr>
                                                     <td>Michelin Pilot Sport Cup 2R</td>
 
-                                                    <td>TW140</td>
+                                                    <td>140</td>
                                                 </tr>
 
                                             </tbody>
@@ -186,7 +241,7 @@ const Home = () => {
                                                 <tr>
                                                     <td>Goodyear Eagle F1 Supercar 3R</td>
 
-                                                    <td>TW100</td>
+                                                    <td>100</td>
                                                 </tr>
 
                                             </tbody>
@@ -195,7 +250,7 @@ const Home = () => {
                                                 <tr>
                                                     <td>Hankook Ventus TD</td>
 
-                                                    <td>TW80</td>
+                                                    <td>80</td>
                                                 </tr>
 
                                             </tbody>
@@ -204,7 +259,7 @@ const Home = () => {
                                                 <tr>
                                                     <td>Pirelli P Zero TrofeoR</td>
 
-                                                    <td>TW60</td>
+                                                    <td>60</td>
                                                 </tr>
 
                                             </tbody>
@@ -212,14 +267,48 @@ const Home = () => {
                                         </table>
 
                                     </div>
+
+
+                                    <div id = "table3" className = "table table3">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>轮胎种类</th>
+
+                                                    <th>耐磨指数(Tread Wear)</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Hoosier R7</td>
+
+                                                    <td>40</td>
+
+                                                </tr>
+
+                                            </tbody>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Hoosier A7</td>
+
+                                                    <td>40</td>
+                                                </tr>
+
+                                            </tbody>
+
+                                        </table>
+                                    </div>
                                 </div>
                             </div>  
                             
                             <p>更好的轮胎代表着更强的抓地力，但同时对悬挂的要求也就更高。绝大部分改装车的原厂悬挂都没有能力完全适配R胎，因此没有更换绞牙避震的大部分车友们其实更换一套半R胎就够了。
                             </p>
                             
-                            *轮胎尺寸等选择问题详见轮毂篇
-	                        <p>最后提一下轮胎的损耗了，不同于街胎，半热熔轮胎都是用heat cycle进行计算的，heat cycle指轮胎达到一个稳定的工作温度之后一段时间又冷却下来。赛道日基本以一节15分钟为计算是一个heat cycle，那么轮胎大致可以使用30个heat cycle，以赛道日来计算的话约等于6个赛道日吧，不过具体情况还是要看驾驶的激烈程度以及轮胎花纹的磨损。</p>
+                            *轮胎尺寸等选择问题详见
+                            <a href="#kaqian-title" onClick = {showLungu}>轮毂篇</a>
+                            <p>最后提一下轮胎的损耗了，不同于街胎，半热熔轮胎都是用heat cycle进行计算的，heat cycle指轮胎达到一个稳定的工作温度之后一段时间又冷却下来。赛道日基本以一节15分钟为计算是一个heat cycle，那么轮胎大致可以使用30个heat cycle，以赛道日来计算的话约等于6个赛道日吧，不过具体情况还是要看驾驶的激烈程度以及轮胎花纹的磨损。</p>
 
 
                         </div>
@@ -237,7 +326,7 @@ const Home = () => {
                             <a href="#kaqian-title" onClick = {showKaqian}>*卡钳详见改装</a>
                             <p>基础概念可以看:  <a href="https://www.bilibili.com/video/BV1zf4y1R7ji?share_source=copy_web">https://www.bilibili.com/video/BV1zf4y1R7ji?share_source=copy_web</a>
                             </p>
-
+                            
                             <PullDownMenu
                                 upTriangleString = {"刹车油 ▴"}
                                 downTriangleString = {"刹车油 ▾"}
@@ -274,13 +363,19 @@ const Home = () => {
 
 
             <div id = "modified-part-wrapper" className = "modified-part-wrapper">
-                <div className = "modified-click" onClick = {showModifiedPart}>
+                {/* <div className = "modified-click" onClick = {showModifiedPart}>
                     <h2 id= "modified-part-title">
                         改装件 ▾
                     </h2>
-                </div>
+                </div> */}
 
                 <div id = "modified-part-content" className = "modified-part-content">
+
+                    <div className = "modified-click">
+                        <h2 id= "modified-part-title">
+                            改装件
+                        </h2>
+                    </div>
 
                     <PullDownMenu
                         upTriangleString = {"卡钳 ▴"}
@@ -310,14 +405,7 @@ const Home = () => {
                 </div>
 
             </div>
-        </div>
-
-        <div id = "projects-wrapper" className = "projects-wrapper">
-            <div className = "projects-click"> {/* onClick = {showProjects}> */}
-                    <h2 id= "projects-title">
-                        Projects
-                    </h2>
-                </div>
+                
             <div id = "projects-content" className = "projects-content">
 
                 <div id="project-1" className = "project-1">
@@ -444,9 +532,8 @@ const Home = () => {
 
             </div>
 
-
-                
         </div>
+
 
 
     </Fragment>
@@ -455,83 +542,146 @@ const Home = () => {
   );
 };
 
-function showTable1(){
-    var table1 = document.getElementById("table1");
-    var table2 = document.getElementById("table2");
+function resetTableButtons(){
     var table1Click = document.getElementById("table1-click");
     var table2Click = document.getElementById("table2-click");
+    var table3Click = document.getElementById("table3-click");
 
-    table1.style.display = "block";
-    table2.style.display = "none";
 
-    table1Click.style.backgroundColor = "white";
-    table1Click.style.boxShadow = "5px 10px #888888";
+    table1Click.style.backgroundColor = "rgb(180,180,180)";
+    table1Click.style.boxShadow = "none";
 
     table2Click.style.backgroundColor = "rgb(180,180,180)";
     table2Click.style.boxShadow = "none";
+
+    table3Click.style.backgroundColor = "rgb(180,180,180)";
+    table3Click.style.boxShadow = "none";
+}
+
+function resetTableContents(){
+    var table1 = document.getElementById("table1");
+    var table2 = document.getElementById("table2");
+    var table3 = document.getElementById("table3");
+
+    table1.style.display = "none";
+    table2.style.display = "none";
+    table3.style.display = "none";
+}
+
+function showTable1(){
+    resetTableButtons();
+    resetTableContents();
+
+    var table1 = document.getElementById("table1");
+
+    var table1Click = document.getElementById("table1-click");
+
+    table1.style.display = "block";
+
+    table1Click.style.backgroundColor = "white";
+    table1Click.style.boxShadow = "5px 10px #888888";
 }
 
 
 function showTable2(){
-    var table1 = document.getElementById("table1");
+    resetTableButtons();
+    resetTableContents();
+
     var table2 = document.getElementById("table2");
-    var table1Click = document.getElementById("table1-click");
+
     var table2Click = document.getElementById("table2-click");
 
-    table1.style.display = "none";
     table2.style.display = "block";
-    table1Click.style.backgroundColor = "rgb(180,180,180)";
-    table1Click.style.boxShadow = "none";
 
     table2Click.style.backgroundColor = "white";
     table2Click.style.boxShadow = "5px 10px #888888";
-
 }
+
+
+function showTable3(){
+    resetTableButtons();
+    resetTableContents();
+
+    var table3 = document.getElementById("table3");
+
+    var table3Click = document.getElementById("table3-click");
+
+    table3.style.display = "block";
+
+    table3Click.style.backgroundColor = "white";
+    table3Click.style.boxShadow = "5px 10px #888888";
+}
+
+function showAdv(){
+    resetMainDisplay();
+
+    var currDiv = document.getElementById("adv-content");
+    currDiv.style.display = 'block';
+}
+
 
 function showWearingPart(){
+    resetMainDisplay();
     var currDiv = document.getElementById("wearing-part-content");
-    var currTitle = document.getElementById("wearing-part-title");
-    if(currDiv.style.display === "block"){
-        currDiv.style.display = "none";
-        currTitle.innerHTML = "损耗件 ▾";
-    }else{
-        currDiv.style.display = 'block';
-        currTitle.innerHTML = "损耗件 ▴";
-    }
+    currDiv.style.display = 'block';
 }
 
-function showProjects(){
+function showProjectOne(){
+
+    resetMainDisplay();
+
     var currDiv = document.getElementById("projects-content");
-    var currTitle = document.getElementById("projects-title");
-    if(currDiv.style.display === "block"){
-        currDiv.style.display = "none";
-        currTitle.innerHTML = "Projects ▾";
-    }else{
-        currDiv.style.display = 'block';
-        currTitle.innerHTML = "Projects ▴";
-    }
+    currDiv.style.display = 'block';
 }
 
+
+function resetMainDisplay(){
+    var div0 = document.getElementById("adv-content");
+    var div1 = document.getElementById("wearing-part-content");
+    var div2 = document.getElementById("modified-part-content");
+    var div3 = document.getElementById("projects-content");
+
+    div0.style.display = "none";
+    div1.style.display = "none";
+    div2.style.display = "none";
+    div3.style.display = "none";
+
+}
 function showModifiedPart(){
+    resetMainDisplay();
+
     var currDiv = document.getElementById("modified-part-content");
-    var currTitle = document.getElementById("modified-part-title");
-    if(currDiv.style.display === "block"){
-        currDiv.style.display = "none";
-        currTitle.innerHTML = "改装件 ▾";
-    }else{
-        currDiv.style.display = 'block';
-        currTitle.innerHTML = "改装件 ▴";
-    }
+    currDiv.style.display = "block";
+    
+}
+
+function showLungu(){
+    resetMainDisplay();
+
+    var currDiv = document.getElementById("modified-part-content");
+
+    currDiv.style.display = 'block';
+
+    var kaqianDiv = document.getElementById("lungu-div");
+    var kaqianTitle = document.getElementById("lungu-title");
+
+    kaqianDiv.style.display = "block";
+    kaqianTitle.innerHTML = "轮毂 ▴";
 }
 
 function showKaqian(){
-    var currDiv = document.getElementById("modified-part-content");
-    var currTitle = document.getElementById("modified-part-title");
 
-    if(currDiv.style.display != "block"){
-        currDiv.style.display = 'block';
-        currTitle.innerHTML = "改装件 ▴";
-    }
+    resetMainDisplay();
+
+    var currDiv = document.getElementById("modified-part-content");
+
+    currDiv.style.display = 'block';
+
+    var kaqianDiv = document.getElementById("kaqian-div");
+    var kaqianTitle = document.getElementById("kaqian-title");
+
+    kaqianDiv.style.display = "block";
+    kaqianTitle.innerHTML = "卡钳 ▴";
 }
 
 function showTableContent(){

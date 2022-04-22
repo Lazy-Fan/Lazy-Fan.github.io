@@ -7,11 +7,8 @@ body p{
     margin-top: 5%;
     margin-right: 5%;
     background-color: #0507ac;
-
     height: 70px;
     line-height: 70px;
-    
-
 }
 
 .main-header h1{
@@ -19,13 +16,35 @@ body p{
     color:white;
 }
 
-.projects-button-wrapper{
+.title-box{
+    margin-left:2%;
+    width: 35%;
+    cursor:pointer;
+}
+
+.title-button-wrapper{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+}
+
+
+.title-button-left{
+    display:flex;
+    flex-direction: row;
     margin-left:5%;
-    margin-right:5%;
-    margin-top:5%;
+    margin-top: 2%;
+    width:50%;
+}
+
+
+.title-button-right{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    width:50%;
+    justify-content: end;
+    margin-right:5%;
+    margin-top: 2%;
 }
 
 .project-button{
@@ -35,6 +54,13 @@ body p{
     padding-right:10px;
     box-shadow: 5px 10px #888888;
     cursor:pointer;
+    margin-right:2%;
+    width:40%;
+    text-align: center;
+}
+
+.title-button{
+    width:20%;
 }
 
 .project-button a{
@@ -61,12 +87,10 @@ li{
 
 .wearing-click{
     display: inline-block;
-    cursor: pointer;
 }
 
 .modified-click{
     display: inline-block;
-    cursor:pointer;
 }
 
 .table-content-click{
@@ -89,6 +113,26 @@ li{
     cursor:pointer;
 }
 
+.adv-content{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    background-color:white;
+    box-shadow: 5px 10px #888888;
+    border-style: solid;
+    padding-left:2%;
+    padding-right:2%;
+    padding-bottom:2%;
+}
+
+.intro{
+    margin: 5%;
+}
+
+.intro-footer{
+    text-align:end;
+}
+
 .wearing-part-content{
     margin-left: 5%;
     margin-right: 5%;
@@ -97,9 +141,15 @@ li{
     display: none;
     box-shadow: 5px 10px #888888;
     border-style: solid;
+    padding-top:2%;
     padding-left:2%;
     padding-right:2%;
     padding-bottom:2%;
+}
+
+
+.wearing-part-wrapper{
+    margin-top: 5%;
 }
 
 .modified-part-wrapper{
@@ -137,6 +187,7 @@ li{
     padding-left:2%;
     padding-right:2%;
     padding-bottom:2%;
+    display:none;
 }
 
 .talbe-wrapper{
@@ -158,6 +209,8 @@ table{
 th, td{
     padding: 10px 20px;
     border: 1px solid #000;
+    text-align: center;
+    width:50%;
 }
 
 .table-content{
@@ -177,15 +230,32 @@ th, td{
 
 .table-click{
     cursor: pointer;
+    width:25%;
     background-color: rgb(180,180,180);
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+}
+
+.table-click h3{
+    margin-bottom:5px;
+    padding-bottom:0;
+}
+
+.table-click h5{
+    margin-top:0;
+    padding-top:0;
+    font-size:10px;
 }
 
 .table1-click{
-    margin-right: 30%;
+    margin-right: 10%;
     background-color:white;
     box-shadow: 5px 10px #888888;
+}
+
+.table3-click{
+    margin-left:10%;
 }
 
 .table2{
@@ -204,7 +274,7 @@ th, td{
 }
 
 .project1-list1{
-    line-height:30px;
+    /* line-height:30px; */
 }
 
 .project1-list1 li{
