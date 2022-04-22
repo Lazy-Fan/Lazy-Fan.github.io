@@ -459,16 +459,27 @@ const Home = () => {
 
                     <h2>第一阶段</h2>
                     <div className = "project1-stage1">
-                        <ul className = "project1-list2">
-                            <li>BBS CHR 19’ 9J ET20/10.5J ET25 </li>
-                            <li>Michelin PS4S 255/275</li>
-                            <li>H&R sport spring</li>
-                            <li>M performance diffuser + M performance lip</li>
-                            <li>Active Autowerke Single Midpipe + M performance exhaust</li>
-                            <li>Hawk HPS5.0 pad</li>
-                            <li>K&N High Flow Air Filter</li>
-                            <li>Mishimoto oil catch can</li>
-                        </ul>
+                        <div className ="project1-stage1-list-image">
+
+                            <div className = "project1-stage1-list-image-left">
+                                <ul className = "project1-list2">
+                                    <li>BBS CHR 19’ 9J ET20/10.5J ET25 </li>
+                                    <li>Michelin PS4S 255/275</li>
+                                    <li>H&R sport spring</li>
+                                    <li>M performance diffuser + M performance lip</li>
+                                    <li>Active Autowerke Single Midpipe + M performance exhaust</li>
+                                    <li>Hawk HPS5.0 pad</li>
+                                    <li>K&N High Flow Air Filter</li>
+                                    <li>Mishimoto oil catch can</li>
+                                </ul>
+                            </div>
+
+                            <div className = "project1-stage1-list-image-right">
+                                <img src={require('../images/turn8_2021.jpeg')}
+                                    alt = "turn8_2021.jpeg" />
+                            </div>
+
+                        </div>
 
 
                         <p>

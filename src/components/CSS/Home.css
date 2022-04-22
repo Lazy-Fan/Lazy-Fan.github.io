@@ -284,6 +284,25 @@ th, td{
     font-size: 20px;
 }
 
+.project1-stage1-list-image{
+    display:flex;
+    flex-direction: row;
+}
+
+.project1-stage1-list-image-left{
+    width:50%;
+}
+
+
+.project1-stage1-list-image-right{
+    width:50%;
+}
+
+.project1-stage1-list-image-right img{
+    width:80%;
+    height:90%;
+}
+
 .project1-list1{
     /* line-height:30px; */
 }
