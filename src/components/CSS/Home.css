@@ -289,6 +289,8 @@ th, td{
     flex-direction: row;
 }
 
+
+
 .project1-stage1-list-image-left{
     width:50%;
 }
@@ -328,4 +330,28 @@ th, td{
 .project1-list3 li{
     font-size:16px;
 }
+
+
+@media screen and (max-width: 750px) {
+    .project1-stage1-list-image{
+        display:flex;
+        flex-direction: column;
+    }
+
+
+    .project1-stage1-list-image-left{
+        width:100%;
+    }
+    
+    
+    .project1-stage1-list-image-right{
+        width:100%;
+        text-align: center;
+    }
+    
+    .project1-stage1-list-image-right img{
+        width:70%;
+        height:90%;
+    }
+  }
 

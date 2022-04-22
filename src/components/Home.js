@@ -386,25 +386,25 @@ const Home = () => {
                     <PullDownMenu
                         upTriangleString = {"卡钳 ▴"}
                         downTriangleString = {"卡钳 ▾"}
-                        content1 = {"\t一说到卡钳就令人头疼，全都是bermbo gt和ap 9660之类的，亦或者是endless。在换这些卡钳之前，先问问自己车需不需要这样子的赛用卡钳。连刹车皮和油都没有单独升级过就想直接换一套卡钳，虽说是带上了刹车皮、盘、和钢喉还有油，但是这么浪费值得吗？同时在原厂卡钳没有升级过刹车皮和油还有轮胎的情况下，问问自己到底技术够不够开到刹车和轮胎的极限。更换大活塞的卡钳还又可能需要更换原厂的刹车总泵，总泵不更换的情况下，更大的卡钳也不能提供更大的制动力，改车先健脑，不要被网上这么多商家欺骗了去更换一整套刹车，因为这肯定是利润最大的。"}
-                        currContentId = {"kaqian-div"}
+                        // content1 = {"\t一说到卡钳就令人头疼，全都是bermbo gt和ap 9660之类的，亦或者是endless。在换这些卡钳之前，先问问自己车需不需要这样子的赛用卡钳。连刹车皮和油都没有单独升级过就想直接换一套卡钳，虽说是带上了刹车皮、盘、和钢喉还有油，但是这么浪费值得吗？同时在原厂卡钳没有升级过刹车皮和油还有轮胎的情况下，问问自己到底技术够不够开到刹车和轮胎的极限。更换大活塞的卡钳还又可能需要更换原厂的刹车总泵，总泵不更换的情况下，更大的卡钳也不能提供更大的制动力，改车先健脑，不要被网上这么多商家欺骗了去更换一整套刹车，因为这肯定是利润最大的。"}
+                        //currContentId = {"kaqian-div"}
                         currTitleId = {"kaqian-title"}
                     />
 
                     <PullDownMenu
                         upTriangleString = {"轮毂 ▴"}
                         downTriangleString = {"轮毂 ▾"}
-                        link1 = {"\thttps://www.bilibili.com/video/BV18k4y127VG?share_source=copy_web"}
-                        currContentId = {"lungu-div"}
+                        // link1 = {"\thttps://www.bilibili.com/video/BV18k4y127VG?share_source=copy_web"}
+                        // currContentId = {"lungu-div"}
                         currTitleId = {"lungu-title"}
                     />
 
                     <PullDownMenu
                         upTriangleString = {"底盘 ▴"}
                         downTriangleString = {"底盘 ▾"}
-                        content1 = {"\t不同车型基础悬挂知识可以参考: "}
-                        link1 = {"https://www.bilibili.com/video/BV1YZ4y1u7rb?share_source=copy_web"}
-                        currContentId = {"dipan-div"}
+                        // content1 = {"\t不同车型基础悬挂知识可以参考: "}
+                        // link1 = {"https://www.bilibili.com/video/BV1YZ4y1u7rb?share_source=copy_web"}
+                        //currContentId = {"dipan-div"}
                         currTitleId = {"dipan-title"}
                     />
 
