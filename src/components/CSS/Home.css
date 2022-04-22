@@ -265,6 +265,10 @@ th, td{
     display: none;
 }
 
+.table3{
+    display: none;
+}
+
 .project-1{
     margin-left: 3%;
     margin-right: 3%; 
