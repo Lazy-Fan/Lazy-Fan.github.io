@@ -19,6 +19,10 @@ body p{
     color:white;
 }
 
+.main-display{
+    margin-bottom:5%;
+}
+
 .title-box{
     margin-left:2%;
     width: 35%;

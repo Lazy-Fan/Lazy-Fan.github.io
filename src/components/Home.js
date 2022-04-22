@@ -513,9 +513,10 @@ const Home = () => {
 
                     <br></br>
                     <h2>第二阶段</h2>
+                    <h2>&emsp;&emsp;敬请期待</h2>
                     <div className = "project1-stage2">
 
-                        <ul className = "project1-list3">
+                        {/* <ul className = "project1-list3">
                             <li>78mm MotorsportHardware Wheel stud kit 14*1.25</li>
                             <li>Swift Spec-R + Millway camber plate</li>
                             <li>Falken RT660 265/275</li>
@@ -523,7 +524,7 @@ const Home = () => {
                             <li>Girodisc Front rotor</li>
                             <li>HAeroflowDynamics rear diffuser</li>
                             <li>Dimple M12x1.5x18 Magnetic Engine Oil Drain Plug</li>
-                        </ul>
+                        </ul> */}
 
                     </div>
                         
