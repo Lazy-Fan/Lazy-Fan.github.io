@@ -191,9 +191,9 @@ const Home = () => {
 
                                             <tbody>
                                                 <tr>
-                                                    <td>Yokohama A052</td>
+                                                    <td>Michelin Pilot Sport Cup 2 Connect</td>
 
-                                                    <td>200</td>
+                                                    <td>240</td>
 
                                                 </tr>
 
@@ -201,21 +201,51 @@ const Home = () => {
 
                                             <tbody>
                                                 <tr>
-                                                    <td>Michelin Pilot Sport Cup 2</td>
+                                                    <td>Goodyear Eagle F1 Supercar 3</td>
 
-                                                    <td> 180</td>
+                                                    <td>220</td>
                                                 </tr>
 
                                             </tbody>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Yokohama A052</td>
+
+                                                    <td>200</td>
+                                                </tr>
+
+                                            </tbody>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Yokohama Advan Neova AD08 R</td>
+
+                                                    <td>200</td>
+                                                </tr>
+
+                                            </tbody>
+
 
                                             <tbody>
                                                 <tr>
                                                     <td>Falken Azenis RT660</td>
 
-                                                    <td> 200</td>
+                                                    <td>200</td>
                                                 </tr>
 
                                             </tbody>
+
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Nankang CR-1</td>
+
+                                                    <td>200</td>
+                                                </tr>
+
+                                            </tbody>
+
                                         </table>
                                     </div>
 
@@ -232,6 +262,15 @@ const Home = () => {
 
                                             <tbody>
                                                 <tr>
+                                                    <td>Michelin Pilot Sport Cup 2</td>
+
+                                                    <td>180</td>
+                                                </tr>
+
+                                            </tbody>
+
+                                            <tbody>
+                                                <tr>
                                                     <td>Nankang AR1</td>
 
                                                     <td>100</td>
@@ -241,16 +280,25 @@ const Home = () => {
 
                                             <tbody>
                                                 <tr>
-                                                    <td>Michelin Pilot Sport Cup 2R</td>
+                                                    <td>Goodyear Eagle F1 Supercar 3R</td>
 
-                                                    <td>140</td>
+                                                    <td>100</td>
                                                 </tr>
 
                                             </tbody>
 
                                             <tbody>
                                                 <tr>
-                                                    <td>Goodyear Eagle F1 Supercar 3R</td>
+                                                    <td>Nitto NT01</td>
+
+                                                    <td>100</td>
+                                                </tr>
+
+                                            </tbody>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Maxxis RC-1</td>
 
                                                     <td>100</td>
                                                 </tr>
