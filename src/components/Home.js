@@ -42,12 +42,16 @@ const Home = () => {
                     <h4>改装件</h4>
                 </div>
 
+                <div className = "project-button title-button" onClick = {showbrakePart}>
+                    <h4>刹车</h4>
+                </div>
+
             </div>
 
             <div className = "title-button-right" onClick = {showProjectOne}>
 
                 <div className = "project-button">
-                    <h5>Project F82M4 StreetGT</h5>
+                    <h5>Project F82</h5>
                 </div>
 
             </div>
@@ -59,13 +63,14 @@ const Home = () => {
 
                 <div className = "intro">
                     <h2>食用指南</h2>
-                    <p>&emsp;&emsp;相信你来到这里一定是为了更了解你的那台下赛道民用车，那么就请花时间耐心看完所有干货。
-                    </p>
-
-                    <div className = "intro">
+                    <p>&emsp;&emsp;相信你来到这里一定是为了更了解你的那台下赛道民用车！</p>
+                    <p>&emsp;&emsp;那么就请花时间耐心看完所有干货！</p>
+                    <p>&emsp;&emsp;多花些时间了解底盘吧！</p>
+                </div>    
+                <div className = "intro">
                     <h2>广告位招租</h2>
-                    </div>
                 </div>
+                
 
             </div>
 
@@ -459,121 +464,68 @@ const Home = () => {
                 </div>
 
             </div>
-                
+            <div id = "brake-part-wrapper" className = "brake-part-wrapper">
+                {/* <div className = "brake-click" onClick = {showbrakePart}>
+                    <h2 id= "brake-part-title">
+                        刹车 ▾
+                    </h2>
+                </div> */}
+                <div id = "brake-part-wrapper" className = "brake-part-wrapper">
+
+                    <div className="brake-click">
+                        <h2 id = "brake-part-title">
+                            刹车
+                        </h2>
+                    </div>
+                </div>
+            </div>
             <div id = "projects-content" className = "projects-content">
 
                 <div id="project-1" className = "project-1">
-                    <h3 id = "project1-title">
-                        Project F82M4 StreetGT
-                    </h3>
-
-                    <p>
-                        &emsp;&emsp;从小就跟着父亲看F1让我对赛车有了一定的基础了解，但是方程式对我来说太过于遥远，后来又忙于学业后逐渐远离了赛车。但18岁那年考驾照我学得特别轻松，觉得自己对车还是有一点天赋的，从那时候就爱上了开车。而真正了解不同品牌的车还是要到17年的时候，在外留学而且大二住得离学校有点远之后就打算买车了。那时候我就很想拥有一台F82，但还在村子里读本科，家里也不让年纪比较小的我玩车，只好妥协买了一台435代步，偶尔跑跑山，而且因为经常要进城改善伙食，高速上会比较快，培养了一些车感。等到毕业换车的时候，其实很纠结到底还要不要换一台M4，毕竟以为开着差不多底盘的车子三年，觉得不会有太大提升，可是思来想去觉得还是想拥有，恰逢疫情慢慢找车到20年末的时候才终于收到了一台心仪的F82。曾是键盘侠的我以为对F82了如指掌，可开车上路短短几天就觉得整个底盘还是有很大差异的，庆幸自己终究做了正确的选择。但是之前一直没跑过赛道的我对赛化改装还没有那么多的理解。看了很多台车，厌倦了很多塑胶内饰的4系想要全皮内饰的我最后就收了一台18年带zcp套件的F82，几乎选配满了，如今才发觉多了我不需要的各种辅助驾驶而且还带了电调悬挂。就是这个原厂电调悬挂让我一度放弃了要换绞牙避震的念头，不然我一定会找一台没有电调的，但又要全皮的车就更加少了。也怪不得我这种要求这么多的人会想以后买911，能自己选配实在是太好了。思来想去，我对这台车的定位会是一台训练赛车，暂时在原厂动力和悬挂的情况下进行一些赛化改装去提升赛道上的稳定性保证我可以不断磨练圈速和技巧，也让自己更加了解车的不同部件调教会对车产生什么影响。我也算是一个赛道中的新手菜鸟吧，但能跑出来的圈速尚可，希望这台车和我能够共同进步。我想让她最终成为一台StreetGT4，因为做不到原厂M4 GT4轻量化的程度，所以最后会把动力刷到500匹以上去追求与原厂GT4差不多的推重比，也可以视作另类的Balence of Performance了吧。
-                    </p>
-
-                    <ul className = "project1-list1">
-                        <h3>改装清单（持续更新中）：</h3>
-                        <p>清单包含已改装清单和未来可能升级项目（带星号部分），会不定时更新，假如有车友们的支持（一键三连）那改装项目就会尽快更新啦。</p>
-                        <li>轮毂：BBS CHR 19’ 9J ET20/10.5J ET25 
-                            <br></br> &emsp;&emsp;&emsp;*Apex EC7R 18x10 ET25
-                            <br></br> &emsp;&emsp;&emsp;78mm MotorsportHardware Wheel stud kit 14*1.25</li>
-                        <li>轮胎：*Falken RT660 275/35/18</li>
-                        <li>底盘：Swift Spec-R + Millway camber plate
-                            <br></br> &emsp;&emsp;&emsp;*Dinan Lightweight tubular anti-roll bar (rear end link included)
+                    <h2 id = "project1-title">
+                        Project F82
+                    </h2>
+                    <p>&emsp;&emsp;基于F82 m4zcp打造的可上路的M4GT4计划</p>
+                    <p>&emsp;&emsp;Sub2系列</p>                
+                    <div className = "project1-list1">
+                    <h3>改装清单（持续更新中）：</h3>
+                    <p>清单包含已改装清单和未来可能升级项目（带星号部分），会不定时更新，假如有车友们的支持（一键三连）那改装项目就会尽快更新啦。</p>
+                    <p>已花费成本：$14000</p>
+                    <li>轮胎：Falken RT660 275/35/18</li>
+                    <li>刹车：Front pfc11
+                            <br></br> &emsp;&emsp;&emsp;Girodisc two piece rotor
+                            <br></br> &emsp;&emsp;&emsp;Rear hawk hps5.0
+                            <br></br> &emsp;&emsp;&emsp;Goodridge stainless steel brake line
+                    </li>
+                    <li>轮毂：Apex EC7R 18x10 ET25 
+                            <br></br> &emsp;&emsp;&emsp;78mm MotorsportHardware Wheel stud kit 14*1.25
+                            <br></br> &emsp;&emsp;&emsp;5mm Macht spacer Front
+                    </li>
+                    <li>底盘：Swift Spec-R spring
+                            <br></br> &emsp;&emsp;&emsp;Millway camber plate
+                            <br></br> &emsp;&emsp;&emsp;*Whiteline front swaybar 
                             <br></br> &emsp;&emsp;&emsp;*Millway thrust arm bushing
                             <br></br> &emsp;&emsp;&emsp;*Spl rear toe arm
-                            <br></br> &emsp;&emsp;&emsp;*Front end link
-                            <br></br> &emsp;&emsp;&emsp;*MCS 2 way Non Remote
-                            <br></br> &emsp;&emsp;&emsp;*Rear Camber arms
-                            <br></br> &emsp;&emsp;&emsp;*Bump steer adjustable tie rod ends
-                            <br></br> &emsp;&emsp;&emsp;*Rear traction arms
-                        </li>
-                        <li>空力：*Apr front splitter
-                            <br></br> &emsp;&emsp;&emsp;M performance diffuser + AeroflowDynamics rear diffuser
-                            <br></br> &emsp;&emsp;&emsp;M performance lip + *Apr gtc300</li>
-                        <li>排气：Active Autowerke Single Midpipe + M performance exhaust</li>
-                        <li>进气：K&N High Flow Air Filter
-                            <br></br> &emsp;&emsp;&emsp;*Vrsf charge pipe</li>
-                        <li>透气壶：Mishimoto oil catch can</li>
-                        <li>刹车：Front pfc11
-                            <br></br> &emsp;&emsp;&emsp;Girodisc two piece rotor
-                            <br></br> &emsp;&emsp;&emsp;*Rear pfc08 
-                            <br></br> &emsp;&emsp;&emsp;*AP 9668 Front BBk
-                        </li>
-                        <li>刹车油：Motul rbf660</li>
-                        <li>刹车钢喉：Goodridge</li>
-                        <li>轻量化电池：*Antigravity</li>
-                        <li>内饰：Recaro Pole Position</li>
-                    </ul>
-
-
-                    <br></br>
-
-                    <h2>第一阶段</h2>
-                    <div className = "project1-stage1">
-                        <div className ="project1-stage1-list-image">
-
-                            <div className = "project1-stage1-list-image-left">
-                                <ul className = "project1-list2">
-                                    <li>BBS CHR 19’ 9J ET20/10.5J ET25</li>
-                                    <li>Michelin PS4S 255&275/35/19</li>
-                                    <li>H&R sport spring</li>
-                                    <li>M performance diffuser + M performance lip</li>
-                                    <li>Active Autowerke Single Midpipe + M performance exhaust</li>
-                                    <li>Hawk HPS5.0 pad</li>
-                                    <li>K&N High Flow Air Filter</li>
-                                    <li>Mishimoto oil catch can</li>
-                                </ul>
-                            </div>
-
-                            <div className = "project1-stage1-list-image-right">
-                                <img src={require('../images/turn8_2021.jpeg')}
-                                    alt = "turn8_2021.jpeg" />
-                            </div>
-
-                        </div>
-
-
-                        <p>
-                            &emsp;&emsp;我在收到这台车时正巧碰上一位车友要拆件回原厂卖车，我就以一个比较低的价格收下了排气和H&R短簧。中尾段对于性能的提升其实非常的少，中段少了一个催化会降低一些回压，可能提升个10马力吧，但是尾段完全就是对音色的调节了。大家最喜欢用的AK其实并不太适配F8x，我认为M performance的尾段音色其实是最好听的，但大家一般收不到单独的尾段，所以我只能说比较凑巧，另外中段的话AA有single和double midpipe两种，前者更偏向性能一些而后者会让音色更加好听。车友正好用的是我想要的single我就一起拿下了。H&R短簧的话是附赠的我就一起拿了，但是装上车之后反而觉得这套短簧特别的差，平时路上非常颠，高速的时候车身假如弹起之后根本拉不住车身让人感觉飞起来了一样。在赛道上对轮荷转移和侧倾的控制也是非常的差，总体感觉是拉低了车的极限。
-                        </p>
-
-
-                        <p>
-                            &emsp;&emsp;改装的同时因为是二手车，所以肯定是要进行一次全方面的保养的。换了hawk HPS5.0的刹车皮，刹车油和钢喉，第一次换的时候没有考虑到之后下赛道会那么激烈的驾驶因此没选择赛皮，现在回想是失策了。然后换了高流量的进气滤芯，机油机滤和空调滤芯都是常规保养，还有就是我换了后差速器油，装了机油透气壶。S55发动机相比上代要耐操很多，可是我为了这一套动力总成能够在之后经常下场的情况下延长寿命去加装了机油透气壶。这个原理就不详细说了，主要是解决缸内直喷进气积碳问题，可以提升发动机的油耗表现和性能。
-                        </p>
-
-
-                        <p>
-                            &emsp;&emsp;现在使用的轮毂BBS CHR 19寸前9J ET20后10.5J ET25， 这套轮毂是有一个E92的车友在卖，当时我还是20寸的原厂666M轮毂，觉得跑赛道使用20寸的轮胎太大了而且轮胎会很贵，原厂轮毂的数据也不支持很多轮胎的选择，因此就想找一套比较便宜点但是不错的19寸轮毂。最终我用原厂的轮毂置换了现在的这套轮毂。因为是蓝色的前四后二卡钳，所以我其实不用太担心ET值但其实前轮9J的数据还是稍微小了那么一点。F8x这代的车要1.6吨以上非常重，所以赛道上推头的问题比较严重，255根本不够宽。北美圈子用F80、F82跑赛道的外国车友很多会使用前后一样275甚至295宽的轮胎，可以很大程度解决M4赛道上的推头问题。受限于目前手上的这套轮毂，我也只能尽可能的去用更宽的轮胎来找抓地力。
-
-                        </p>
-
-                        <p>
-                        &emsp;&emsp;轮毂自带的石化胎几乎没法开，我本来想定Federal的595rspro，但是朋友那边订不到，于是第一套使用的是255/275的米胖子ps4s，但是下了赛道之后发现ps4s根本抱不住弯心，而且连续推极限会让轮胎很快失去抓地力失控，或者说假如要走好行车线的话要提前特别多刹车点然后弯速会非常慢。F82超过1.6吨的车重对轮胎和刹车的要求比我预想的要高很多。这是我在第二次去buttonwillow赛道日时参加计时圈速赛的官方记录成绩，近乎空油，原厂四轮定位数据+这套普通版抓不住地的ps4s做出了目前的最好成绩。
-                        </p>
-
+                            <br></br> &emsp;&emsp;&emsp;*Spl front end link
+                            <br></br> &emsp;&emsp;&emsp;*MCS 2 way Non Remote   
+                    </li>
+                    <li>空力：M performance diffuser
+                            <br></br> &emsp;&emsp;&emsp;AeroflowDynamics rear diffuser
+                            <br></br> &emsp;&emsp;&emsp;*Apr gtc300
+                            <br></br> &emsp;&emsp;&emsp;*Apr front splitter
+                    </li>
+                    <li>动力：Active Autowerke Single Midpipe + 
+                            <br></br> &emsp;&emsp;&emsp;M performance exhaust
+                            <br></br> &emsp;&emsp;&emsp;K&N High Flow Air Filter
+                            <br></br> &emsp;&emsp;&emsp;Mishimoto oil catch can
+                            <br></br> &emsp;&emsp;&emsp;*Vrsf charge pipe
+                    </li>
+                        <li>内饰：Status GT-X Carbon Fiber
+                        <br></br> &emsp;&emsp;&emsp;Macht Schnell Competition lightweight floor mounts
+                        <br></br> &emsp;&emsp;&emsp;Recaro side mounts
+                    </li>
                     </div>
-
-                    <br></br>
-                    <h2>第二阶段</h2>
-                    <h2>&emsp;&emsp;敬请期待</h2>
-                    <div className = "project1-stage2">
-
-                        {/* <ul className = "project1-list3">
-                            <li>78mm MotorsportHardware Wheel stud kit 14*1.25</li>
-                            <li>Swift Spec-R + Millway camber plate</li>
-                            <li>Falken RT660 265/275</li>
-                            <li>Pfc 11 pad</li>
-                            <li>Girodisc Front rotor</li>
-                            <li>HAeroflowDynamics rear diffuser</li>
-                            <li>Dimple M12x1.5x18 Magnetic Engine Oil Drain Plug</li>
-                        </ul> */}
-
-                    </div>
-                        
-                        
-                </div>
+                </div>                        
 
             </div>
 
@@ -659,26 +611,9 @@ function showTable3(){
 
 function showAdv(){
     resetMainDisplay();
-
     var currDiv = document.getElementById("adv-content");
     currDiv.style.display = 'block';
 }
-
-
-function showWearingPart(){
-    resetMainDisplay();
-    var currDiv = document.getElementById("wearing-part-content");
-    currDiv.style.display = 'block';
-}
-
-function showProjectOne(){
-
-    resetMainDisplay();
-
-    var currDiv = document.getElementById("projects-content");
-    currDiv.style.display = 'block';
-}
-
 
 function resetMainDisplay(){
     var div0 = document.getElementById("adv-content");
@@ -690,19 +625,34 @@ function resetMainDisplay(){
     div1.style.display = "none";
     div2.style.display = "none";
     div3.style.display = "none";
-
 }
+
+function showWearingPart(){
+    resetMainDisplay();
+    var currDiv = document.getElementById("wearing-part-content");
+    currDiv.style.display = 'block';
+}
+
 function showModifiedPart(){
     resetMainDisplay();
-
     var currDiv = document.getElementById("modified-part-content");
-    currDiv.style.display = "block";
-    
+    currDiv.style.display = "block";    
+}
+
+function showbrakePart(){
+    resetMainDisplay();
+    var currDiv = document.getElementById("brake-part-content");
+    currDiv.style.display = "block";   
+}
+
+function showProjectOne(){
+    resetMainDisplay();
+    var currDiv = document.getElementById("projects-content");
+    currDiv.style.display = 'block';
 }
 
 function showLungu(){
     resetMainDisplay();
-
     var currDiv = document.getElementById("modified-part-content");
 
     currDiv.style.display = 'block';
@@ -715,7 +665,6 @@ function showLungu(){
 }
 
 function showKaqian(){
-
     resetMainDisplay();
 
     var currDiv = document.getElementById("modified-part-content");
