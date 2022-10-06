@@ -470,14 +470,6 @@ const Home = () => {
                         刹车 ▾
                     </h2>
                 </div> */}
-                <div id = "brake-part-wrapper" className = "brake-part-wrapper">
-
-                    <div className="brake-click">
-                        <h2 id = "brake-part-title">
-                            刹车
-                        </h2>
-                    </div>
-                </div>
             </div>
             <div id = "projects-content" className = "projects-content">
 
@@ -493,13 +485,13 @@ const Home = () => {
                     <p>已花费成本：$14000</p>
                     <li>轮胎：Falken RT660 275/35/18</li>
                     <li>刹车：Front pfc11
-                            <br></br> &emsp;&emsp;&emsp;Girodisc two piece rotor
-                            <br></br> &emsp;&emsp;&emsp;Rear hawk hps5.0
-                            <br></br> &emsp;&emsp;&emsp;Goodridge stainless steel brake line
+                            <br></br> &emsp;&emsp;&emsp;&emsp;Girodisc two piece rotor
+                            <br></br> &emsp;&emsp;&emsp;&emsp;Rear hawk hps5.0
+                            <br></br> &emsp;&emsp;&emsp;&emsp;Goodridge stainless steel brake line
                     </li>
                     <li>轮毂：Apex EC7R 18x10 ET25 
-                            <br></br> &emsp;&emsp;&emsp;78mm MotorsportHardware Wheel stud kit 14*1.25
-                            <br></br> &emsp;&emsp;&emsp;5mm Macht spacer Front
+                            <br></br> &emsp;&emsp;&emsp;&emsp;78mm MotorsportHardware Wheel stud kit 14*1.25
+                            <br></br> &emsp;&emsp;&emsp;&emsp;5mm Macht spacer Front
                     </li>
                     <li>底盘：Swift Spec-R spring
                             <br></br> &emsp;&emsp;&emsp;Millway camber plate
@@ -514,7 +506,7 @@ const Home = () => {
                             <br></br> &emsp;&emsp;&emsp;*Apr gtc300
                             <br></br> &emsp;&emsp;&emsp;*Apr front splitter
                     </li>
-                    <li>动力：Active Autowerke Single Midpipe + 
+                    <li>动力：Active Autowerke Single Midpipe 
                             <br></br> &emsp;&emsp;&emsp;M performance exhaust
                             <br></br> &emsp;&emsp;&emsp;K&N High Flow Air Filter
                             <br></br> &emsp;&emsp;&emsp;Mishimoto oil catch can
