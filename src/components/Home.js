@@ -29,6 +29,10 @@ const Home = () => {
            
             
         </div>
+        
+        <div className = "link-wrapper">
+            <p>改装有多少个坑 第一弹：<a href="https://b23.tv/hIBO7dD">https://b23.tv/hIBO7dD</a></p>
+        </div>
 
         <div className = "title-button-wrapper">
             
