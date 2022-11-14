@@ -31,7 +31,7 @@ const Home = () => {
         </div>
         
         <div className = "link-wrapper">
-            <p>改装有多少个坑 第一弹：<a href="https://b23.tv/hIBO7dD">https://b23.tv/hIBO7dD</a></p>
+            <p>B站视频 戳我：<a href="https://b23.tv/hIBO7dD">https://b23.tv/hIBO7dD</a></p>
         </div>
 
         <div className = "title-button-wrapper">
@@ -870,8 +870,7 @@ const Home = () => {
                     <h2 id = "project1-title">
                         Project F82
                     </h2>
-                    <p>&emsp;&emsp;基于F82 m4zcp打造的可上路的M4GT4计划</p>
-                    <p>&emsp;&emsp;Sub2系列</p>                
+                    <p>&emsp;&emsp;基于F82 m4zcp打造的可上路的M4GT4计划</p>                
                     <div className = "project1-list1">
                     <h3>改装清单（持续更新中）：</h3>
                     <p>清单包含已改装清单和未来可能升级项目（带星号部分），会不定时更新，假如有车友们的支持（一键三连）那改装项目就会尽快更新啦。</p>
