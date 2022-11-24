@@ -876,9 +876,9 @@ const Home = () => {
                     <p>清单包含已改装清单和未来可能升级项目（带星号部分），会不定时更新，假如有车友们的支持（一键三连）那改装项目就会尽快更新啦。</p>
                     <p>已花费成本：$14000</p>
                     <li>轮胎：Falken RT660 275/35/18</li>
-                    <li>刹车：Front pfc11
+                    <li>刹车：Front pad pfc11
                             <br></br> &emsp;&emsp;&emsp;&emsp;Girodisc two piece rotor
-                            <br></br> &emsp;&emsp;&emsp;&emsp;Rear hawk hps5.0
+                            <br></br> &emsp;&emsp;&emsp;&emsp;Rear pad hawk hps5.0
                             <br></br> &emsp;&emsp;&emsp;&emsp;Goodridge stainless steel brake line
                     </li>
                     <li>轮毂：Apex EC7R 18x10 ET25 
@@ -887,22 +887,17 @@ const Home = () => {
                     </li>
                     <li>底盘：Swift Spec-R spring
                             <br></br> &emsp;&emsp;&emsp;Millway camber plate
-                            <br></br> &emsp;&emsp;&emsp;*Whiteline front swaybar 
-                            <br></br> &emsp;&emsp;&emsp;*Millway thrust arm bushing
-                            <br></br> &emsp;&emsp;&emsp;*Spl rear toe arm
-                            <br></br> &emsp;&emsp;&emsp;*Spl front end link
-                            <br></br> &emsp;&emsp;&emsp;*MCS 2 way Non Remote   
+                            <br></br> &emsp;&emsp;&emsp;Whiteline front swaybar 
+                            <br></br> &emsp;&emsp;&emsp;Spl front end links   
                     </li>
                     <li>空力：M performance diffuser
                             <br></br> &emsp;&emsp;&emsp;AeroflowDynamics rear diffuser
-                            <br></br> &emsp;&emsp;&emsp;*Apr gtc300
-                            <br></br> &emsp;&emsp;&emsp;*Apr front splitter
                     </li>
                     <li>动力：Active Autowerke Single Midpipe 
                             <br></br> &emsp;&emsp;&emsp;M performance exhaust
                             <br></br> &emsp;&emsp;&emsp;K&N High Flow Air Filter
                             <br></br> &emsp;&emsp;&emsp;Mishimoto oil catch can
-                            <br></br> &emsp;&emsp;&emsp;*Vrsf charge pipe
+                            <br></br> &emsp;&emsp;&emsp;Gts transmission map
                     </li>
                         <li>内饰：Status GT-X Carbon Fiber
                         <br></br> &emsp;&emsp;&emsp;Macht Schnell Competition lightweight floor mounts
